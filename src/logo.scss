@@ -1,0 +1,8 @@
+$logo-width: 222px;
+$logo-height: 58px;
+.logo {
+    background-image: url("../img/logo.png");
+    background-size: $logo-width, $logo-height;
+    width: $logo-width;
+    height: $logo-height;
+}

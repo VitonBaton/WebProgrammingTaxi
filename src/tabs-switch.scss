@@ -1,0 +1,22 @@
+@import "colors";
+@import "fonts";
+.tabs-switch {
+    color: $non-active-color;
+    width: 210px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    &:hover {
+        background-color: $switch_tab_color;
+    }
+    &_enabled {
+        background-color: $switch_tab_color;
+        color: black;
+    }
+    &__text {
+        margin: auto;
+        text-align: center;
+        @include text;
+    }
+}

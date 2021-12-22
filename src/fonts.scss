@@ -1,0 +1,23 @@
+@import "colors";
+// @mixin not-active-text {
+//     color: $non-active-color;
+// }
+@mixin h1-size {
+    font: {
+        size: 24px;
+    }
+}
+
+@mixin h2-size {
+    font: {
+        size: 22px;
+    }
+}
+
+@mixin text {
+    font: {
+        family: "Roboto", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        size: 18px;
+        weight: 400;
+    }
+}
