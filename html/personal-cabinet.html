@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Drivers2 Page</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo header__logo header__logo_disappear-when-mobile"></div>
+        <div class="nav header__nav">
+            <input id="nav__toggle" class="nav__toggle" type="checkbox" />
+            <label class="nav__btn" for="nav__toggle">
+              <span></span>
+            </label>
+
+            <ul class="nav__box">
+                <li><a class="nav__item" href="#">Главная</a></li>
+                <li><a class="nav__item" href="#">Водителям</a></li>
+            </ul>
+        </div>
+        <div class="user header__user">
+            <p class="user__name">User name</p>
+            <img src="../img/user.png" class="user__img user__img_right"></img>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="page-nav">
+                <ul class="page-nav__list">
+                    <li class="page-nav__list-item page-nav__list-item_enabled">Личные данные</li>
+                    <li class="page-nav__list-item"> История заказов</li>
+                </ul>
+            </div>
+            <div class="personal-info">
+                <div class="personal-info__avatar-block">
+                    <img class="personal-info__avatar" src="../img/user.png">
+                    <div class="button button_main personal-info__save-changes-button">Изменить аватар</div>
+                </div>
+                <div class="personal-info__main-block">
+                    <form class="personal-info__info-block">
+                        <div class="personal-info__row">
+                            <div class="col">
+                                <div class="edit-input personal-info__edit-input">
+                                    <label class="edit-input__label">Фамилия</label>
+                                    <input type="text" class="edit-input__input" value="Khalilov">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="edit-input personal-info__edit-input">
+                                    <label class="edit-input__label">Имя</label>
+                                    <input type="text" class="edit-input__input" value="Magomed">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personal-info__row">
+                            <div class="col">
+                                <div class="edit-input personal-info__edit-input">
+                                    <label class="edit-input__label">Дата рождения</label>
+                                    <input type="date" class="edit-input__input" value="2002-02-25">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="edit-input personal-info__edit-input">
+                                    <label class="edit-input__label">Номер телефона</label>
+                                    <input type="tel" class="edit-input__input" value="+77777777777">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personal-info__row">
+                            <button type="submit" class="button button_main personal-info__save-changes-button">Сохранить изменения</button>
+                        </div>
+                    </form>
+                    <form class="personal-info__password-block">
+                        <div class="personal-info__row">
+                            <div class="personal-info__old-pass">
+                                <div class="edit-input personal-info__edit-input">
+                                    <label class="edit-input__label">Старый пароль</label>
+                                    <input type="password" class="edit-input__input" value="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="personal-info__row">
+                            <div class="col">
+                                <div class="edit-input personal-info__edit-input">
+                                    <label class="edit-input__label">Новый пароль</label>
+                                    <input type="password" class="edit-input__input" value="">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="edit-input personal-info__edit-input">
+                                    <label class="edit-input__label">Подтверждение пароля</label>
+                                    <input type="password" class="edit-input__input" value="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="personal-info__row">
+                            <button type="submit" class="button button_main personal-info__save-changes-button">Изменить пароль</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__block footer__block_to-main">На главную
+        </div>
+        <div class="footer__block footer__block_for-drivers">Водителям
+        </div>
+        <div class="footer__block footer__block_phone">Контактный телефон<br><br>+___(__)_______
+        </div>
+    </footer>
+</body>
+
+</html>
