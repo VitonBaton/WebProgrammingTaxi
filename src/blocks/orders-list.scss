@@ -1,0 +1,10 @@
+.orders-list {
+    @include container;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    &__order-history-card {
+        @include auto;
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,62 @@
+.modal-order-window {
+    position: absolute;
+    z-index: 9;
+    width: 40%;
+    @include bp(lg) {
+        width: 60%;
+    }
+    @include bp(md) {
+        width: 70%;
+    }
+    @include bp(sm) {
+        width: 90%;
+    }
+    border-radius: 20px;
+    border: 0.3px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    &__row {
+        padding-top: $grid-gap-side/2;
+        padding-bottom: $grid-gap-side/2;
+        @include row;
+        width: 400px;
+    }
+    &__label {
+        @include col(6);
+        display: flex;
+        align-items: center;
+        @include text;
+        height: 40px;
+    }
+    &__output {
+        @include col(6);
+        height: 30px;
+        border: 0.2px solid black;
+        border-radius: 5px;
+        display: flex;
+        margin-right: 13.4px;
+        align-items: center;
+        @include text;
+    }
+    &__header {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        @include text;
+        @include h1-size;
+    }
+    &__button {
+        margin: auto;
+        @include auto;
+    }
+    &__close-button {
+        font-family: "Segoe UI";
+        font-size: 40px;
+        position: absolute;
+        right: 20px;
+        top: 0px;
+    }
+}

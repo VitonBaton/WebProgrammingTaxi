@@ -1,0 +1,16 @@
+.user {
+    height: 60px;
+    display: inline-flex;
+    &__name {
+        margin-left: 20px;
+        margin-right: 20px;
+        @include text;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__img {
+        width: 60px;
+        height: 60px;
+    }
+}

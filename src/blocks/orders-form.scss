@@ -1,0 +1,77 @@
+.orders-form {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    @include bp(md) {
+        left: 0px;
+        top: 0px;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        border: none;
+        width: 100%;
+    }
+    z-index: 9;
+    width: 630px;
+    border-radius: 20px;
+    border: 0.3px solid black;
+    @include text;
+    background-color: white;
+    padding-top: 20px;
+    &__row {
+        padding-top: $grid-gap-side;
+        padding-bottom: $grid-gap-side;
+        @include row;
+        @include bp(md) {
+            flex-direction: column;
+            padding-top: 0px;
+        }
+    }
+    &__input {
+        @include col;
+        height: 40px;
+        border-radius: 5px;
+        @include bp(md) {
+            margin-bottom: 15px;
+        }
+        &_text {
+            border-width: 0.2px;
+            border-color: black;
+            color: $non-active-color;
+            @include text;
+        }
+        &_checkbox {
+            @include block;
+            align-items: center;
+        }
+        &_select {
+            @include auto;
+            @include text;
+            margin: auto;
+        }
+    }
+    &__checkbox-text {
+        margin-left: 30px;
+        margin-top: auto;
+        margin-bottom: auto;
+        text-align: center;
+        @include text;
+    }
+    &__button {
+        margin-top: auto;
+        width: 100%;
+        height: 60px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        @include bp(md) {
+            border-radius: 20px;
+            width: 250px;
+            height: 40px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.registration-form {
+    @include col(5);
+    @include bp(lg) {
+        @include col(6);
+    }
+    @include bp(md) {
+        margin-top: 20px;
+        @include col(8);
+    }
+    @include bp (sm) {
+        @include col(11);
+    }
+    margin-top: 3%;
+    padding: 15px;
+    border: 0.5px solid black;
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    &__header {
+        @include text;
+        @include h1-size;
+        margin-bottom: 15px;
+    }
+    &__center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include col(8);
+    }
+    &__input {
+        margin-top: 15px;
+    }
+    &__checkbox-label {
+        margin-left: 5px;
+        @include text;
+    }
+}

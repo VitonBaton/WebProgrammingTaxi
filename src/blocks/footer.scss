@@ -1,0 +1,42 @@
+.footer {
+    margin-top: 30px;
+    border-top: 1px solid black;
+    @include row;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @include bp(sm) {
+        flex-direction: column;
+        align-items: center;
+    }
+    &__block {
+        @include text;
+        @include h1-size;
+        @include bp(sm) {
+            margin-top: 30px;
+        }
+        &_to-main {
+            @include col(4);
+            text-align: end;
+            @include bp(sm) {
+                text-align: center;
+                @include col(6);
+            }
+        }
+        &_for-drivers {
+            @include col(4);
+            text-align: end;
+            @include bp(sm) {
+                text-align: center;
+                @include col(6);
+            }
+        }
+        &_phone {
+            @include col(3);
+            text-align: end;
+            @include bp(sm) {
+                text-align: center;
+                @include col(12);
+            }
+        }
+    }
+}

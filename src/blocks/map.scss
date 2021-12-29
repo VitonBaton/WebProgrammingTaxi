@@ -1,0 +1,25 @@
+.map {
+    position: relative;
+    width: 100%;
+    height: 660px;
+    background-image: url("../img/map.png");
+    background-size: 100% 660px;
+    display: flex;
+    justify-content: center;
+    &__first-order {
+        position: absolute;
+        top: 50%;
+        left: 48%;
+    }
+    &__second-order {
+        position: absolute;
+        top: 33%;
+        left: 60%;
+    }
+    &__arrow {
+        position: absolute;
+    }
+    &__modal-order-window {
+        top: 20%;
+    }
+}

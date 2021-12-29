@@ -1,0 +1,22 @@
+.header {
+    @include row;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 60px;
+    background-color: $header_color;
+    &__logo {
+        &_disappear-when-mobile {
+            @include bp(md) {
+                display: none;
+            }
+        }
+    }
+    &__user {
+        margin-left: auto;
+    }
+    &__nav {
+        @include col;
+        text-align: center;
+        margin: auto;
+    }
+}

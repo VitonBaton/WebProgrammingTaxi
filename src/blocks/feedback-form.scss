@@ -1,0 +1,39 @@
+.feedback-form {
+    //@include col(5);
+    margin-top: 7%;
+    padding: 15px;
+    border: 0.5px solid black;
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__header {
+        @include text;
+        @include h1-size;
+        margin-bottom: 15px;
+        @include bp(sm) {
+            @include h2-size;
+        }
+    }
+    &__star-five {
+        margin-left: 7.5px;
+        margin-right: 7.5px;
+    }
+    &__center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include col(8);
+    }
+    &__input {
+        margin-top: 15px;
+    }
+    &__textarea {
+        width: 80%;
+    }
+    &__checkbox-label {
+        margin-left: 5px;
+        @include text;
+    }
+}

@@ -1,0 +1,52 @@
+@import "variables";
+@mixin container {
+    margin: 0 auto;
+    max-width: map-get($map: $grid-breakpoints, $key: xxl);
+    padding-left: $grid-gap-side;
+    padding-right: $grid-gap-side;
+}
+
+@mixin row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin col($size: 0) {
+    @if $size==0 {
+        flex: 1 0 auto;
+        margin-left: $grid-gap-side;
+        margin-right: $grid-gap-side;
+    }
+    @else {
+        margin-left: $grid-gap-side;
+        margin-right: $grid-gap-side;
+        flex: 0 0 auto;
+        width: calc(#{percentage($size/12)} - #{$grid-gap});
+    }
+}
+
+@mixin media($width) {
+    @media(max-width: ($width - 1)) {
+        @content;
+    }
+}
+
+@mixin bp($name) {
+    $width: map-get($grid-breakpoints, $name);
+    @include media($width) {
+        @content;
+    }
+}
+
+@mixin block {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin size-auto {
+    word-break: break-word;
+}
+
+@mixin auto {
+    flex: 0 0 auto;
+}

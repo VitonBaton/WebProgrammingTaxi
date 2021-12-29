@@ -1,0 +1,50 @@
+.page-nav {
+    @include bp(xl) {
+        @include col(12);
+    }
+    display: flex;
+    justify-content: center;
+    &__list {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        @include bp(xl) {
+            justify-content: center;
+            flex-direction: row;
+        }
+        @include bp(sm) {
+            justify-content: center;
+            flex-direction: column;
+        }
+        list-style: none;
+    }
+    &__list-item {
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        @include text;
+        @include h2-size;
+        color: $non-active-color;
+        cursor: pointer;
+        user-select: none;
+        &:hover {
+            background-color: $switch_tab_color;
+            border-radius: 15px;
+        }
+        &_enabled {
+            color: black;
+        }
+        @include bp(sm) {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+}

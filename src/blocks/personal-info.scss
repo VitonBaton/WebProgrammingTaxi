@@ -1,0 +1,68 @@
+.personal-info {
+    @include col;
+    @include container;
+    @include row;
+    @include media(845px) {
+        width: 100%;
+    }
+    margin-top: 35px;
+    &__avatar-block {
+        @include col(5);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include bp(lg) {
+            @include col;
+        }
+        @include media(1000px) {
+            @include col;
+        }
+    }
+    &__main-block {
+        @include col;
+        @include media(845px) {
+            @include col(12);
+        }
+    }
+    &__info-block {
+        justify-content: center;
+    }
+    &__old-pass {
+        @include col(6);
+        @include media(581px) {
+            @include col(12);
+        }
+    }
+    &__password-block {
+        margin-top: 70px;
+        justify-content: center;
+    }
+    &__avatar {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+    &__row {
+        @include row;
+        margin-top: 40px;
+    }
+    &__edit-input {
+        @include auto;
+        @include bp(md) {
+            margin-top: 15px;
+        }
+    }
+    // &__family{
+    // }
+    // &__name{
+    // }
+    // &__dob{
+    // }
+    // &__phone{
+    // }
+    &__save-changes-button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

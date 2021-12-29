@@ -1,0 +1,24 @@
+@import "mixins";
+@import "variables";
+.container {
+    @include container;
+}
+
+.row {
+    @include row;
+    &_justify-content-center {
+        justify-content: center;
+    }
+}
+
+.col {
+    @include col;
+}
+
+.col-6 {
+    @include col(6);
+}
+
+.relative-container {
+    position: relative;
+}

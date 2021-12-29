@@ -1,0 +1,17 @@
+.order-icon {
+    &_label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 120px;
+        height: 30px;
+        @include text;
+        background-color: white;
+        border: 0.5px solid black;
+        border-radius: 5px;
+    }
+    &_img {
+        width: 40px;
+        height: 40px;
+    }
+}

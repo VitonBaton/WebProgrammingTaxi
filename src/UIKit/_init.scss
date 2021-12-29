@@ -1,0 +1,23 @@
+@import "colors";
+@import "fonts";
+@import "tabs-switch";
+@import "input";
+.text {
+    @include text;
+    text-decoration: none;
+    &_not-important {
+        color: $non-active-color;
+    }
+    &_mt-15 {
+        margin-top: 15px;
+    }
+    &_mt-30 {
+        margin-top: 30px;
+    }
+    &_h1-size {
+        @include h1-size;
+    }
+    &_h2-size {
+        @include h2-size;
+    }
+}

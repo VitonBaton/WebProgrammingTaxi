@@ -1,0 +1,47 @@
+@import "colors";
+@import "fonts";
+@mixin input {
+    border-width: 0.2px;
+    border-color: black;
+    width: 243px;
+    height: 42px;
+    @include text;
+}
+
+// @mixin orders-form-input {
+//     border-width: 0.2px;
+//     border-color: black;
+//     color: $non-active-color;
+//     width: 308px;
+//     height: 41px;
+//     @include text;
+// }
+.input {
+    border: 0.2px solid black;
+    width: 243px;
+    height: 42px;
+    @include text;
+    &_error {
+        border-color: red;
+        border-width: 2px;
+    }
+}
+
+.edit-input {
+    display: flex;
+    flex-direction: column;
+    &__label {
+        @include text;
+        margin-bottom: 10px;
+    }
+    &__input {
+        @include text;
+        border: 0.2px solid black;
+        height: 30px;
+        &_error {
+            border-color: red;
+            border-width: 2px;
+        }
+    }
+    margin-right: -1.6px;
+}

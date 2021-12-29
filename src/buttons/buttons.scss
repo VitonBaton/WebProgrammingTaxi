@@ -1,0 +1,46 @@
+@import "../UIKit/colors";
+@import "../UIKit/fonts";
+@mixin button-size {
+    width: 210px;
+    height: 40px;
+}
+
+.button {
+    border-radius: 15px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    @include button-size();
+    @include text;
+    user-select: none;
+    &_main {
+        background-color: $main_button_color;
+        &:hover {
+            background-color: $main_button_hover_color;
+        }
+        &:active {
+            background-color: $main_button_pressed_color;
+        }
+    }
+    &_secondary {
+        background-color: $secondary_button_color;
+        &:hover {
+            background-color: $secondary_button_hover_color;
+        }
+        &:active {
+            background-color: $secondary_button_pressed_color;
+        }
+    }
+    &_mt-15 {
+        margin-top: 15px;
+    }
+    &_mt-30 {
+        margin-top: 30px;
+    }
+    &_mt-10 {
+        margin-top: 10px;
+    }
+    color: black;
+}

@@ -1,0 +1,15 @@
+.order-history-card {
+    border: 0.3px solid black;
+    background-color: #ffe9ae;
+    border-radius: 15px;
+    padding: 10px;
+    &__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    &__info-block {
+        display: flex;
+        align-items: center;
+    }
+}
